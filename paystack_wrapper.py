@@ -1,7 +1,7 @@
 import requests
 import json
 
-api = "sk_test_17a27428727ca80db6bf2f0bb69310617f30744c"
+api = "[YOUR_API_KEY]"
 
 with open("bank_code.json", "r") as f:
     bank_code = json.load(f)
