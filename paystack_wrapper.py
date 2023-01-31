@@ -61,4 +61,12 @@ def initiate_transfer():
 
     print(transfer_details)
 
-initiate_transfer()
+
+#card validation
+def card_val():
+    card_no = input("Enter Card Number: ")
+    card_details = requests.get(url=f"https://api.paystack.co/decision/bin/{card_no[0:6]}")
+
+    print(card_details.json())
+
+card_val()
